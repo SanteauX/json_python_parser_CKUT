@@ -262,6 +262,7 @@ def parse_request(text):
         section_i = get_section_i(main)
         ##################
         item = section_i_to_array(section_i)
+        item[3] = item[3].replace(" ", "")
         print(item)
         ##################
         main = remove_section_i(main)
